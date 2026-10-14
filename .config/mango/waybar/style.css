@@ -1,0 +1,71 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 13px;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    background: rgba(30, 30, 30, 0.9);
+    color: #ddca9e;
+}
+
+/* --- Рабочие столы (теперь справа) --- */
+#workspaces {
+    background: rgba(40, 40, 40, 0.8);
+    border-radius: 4px;
+    padding: 0 6px;
+    margin: 4px 0;
+}
+
+#workspaces button {
+    padding: 0 6px;
+    color: #9e906f;
+    background: transparent;
+}
+
+#workspaces button.visible {
+    color: #ddca9e;
+}
+
+#workspaces button.active {
+    color: #1e1e1e;
+    background: #ddca9e;
+    border-radius: 3px;
+}
+
+#workspaces button.urgent {
+    background: #ef5e5e;
+    color: #1e1e1e;
+}
+
+#workspaces button:hover {
+    color: #d79921;
+}
+
+/* --- Активное окно (по центру) --- */
+#window {
+    background: #282828;
+    color: #ddca9e;
+    padding: 0 20px;
+    margin: 4px 0;
+    border-radius: 4px;
+    font-weight: bold; 
+}
+
+/* --- Макет --- */
+#layout {
+    background: #282828;
+    color: #ddca9e;
+    padding: 0 8px;
+    margin: 4px 0;
+    border-radius: 4px;
+}
+
+/* --- Системные модули слева --- */
+#network, #cpu, #memory, #battery, #clock, #backlight, #custom-media, #pulseaudio, #custom-klayout, #tray {
+    padding: 0 8px;
+    margin: 4px 0;
+    background: #282828;
+    border-radius: 4px;
+}
